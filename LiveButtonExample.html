@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Bootstrap Alert</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container mt-4">
+    <h2>Simple Bootstrap Alert Example</h2>
+
+    <!-- Button -->
+    <button class="btn btn-primary" id="btnclick">Click Me</button>
+
+    <div id="alertBox" class="alert alert-success alert-dismissible mt-3" style="display:none;">
+      <strong>Success!</strong> You triggered a Bootstrap alert!
+      <button type="button" class="btn-close" data-bs-dismiss="alert" id="btnclose"></button>
+    </div>
+
+
+    <script>
+      document.getElementById("btnclick").onclick = function () {
+        document.getElementById("alertBox").style.display = "block";
+      };
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
